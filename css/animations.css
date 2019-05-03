@@ -1,0 +1,40 @@
+@keyframes Xanimation{
+	from{
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(225deg);
+	}
+}
+@keyframes Xanimations{
+	from{
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(-45deg);
+	}
+}
+@keyframes imgShows{
+	from {
+		transform: translate3d(-200px, 0 , 0 );
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+	to {
+		transform: translate3d( 0 , 0 , 0 );
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+}
+@keyframes imgHides{
+	from {
+		transform: translate3d( 0 , 0 , 0 );
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	to {
+		transform: translate3d( 200px , 0 , 0 );
+		opacity: 0;
+		filter: alpha(opacity=0);
+	}
+}
