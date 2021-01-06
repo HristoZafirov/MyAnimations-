@@ -558,3 +558,92 @@ div.close-X2:hover .X-line-ani:nth-of-type(2) {
 	transform: translateY(0) scale(1);
 	opacity: 1;
 }
+
+
+/* ============= HOVER EFFECT 8 ====================== */
+
+.hovereffect8 {
+	width: 400px;
+	height: 530px;
+	cursor: pointer;
+}
+.hovereffect8 .wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+}
+.hovereffect8 .wrapper .img {
+	width: 100%;
+	height: 100%;
+	filter: grayscale(1);
+	position: relative;
+	background-image: url('../images/8.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.4s;
+}
+.hovereffect8 .wrapper h2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 50px;
+	letter-spacing: 3px;
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	color: #fff;
+	transition: 0.4s;
+}
+.hovereffect8 .foot {
+	width: 100%;
+	height: 70px;
+	transition: 0.4s;
+	background-color: #333;
+	transform: translateY(-100%);
+	z-index: 1;
+}
+.hovereffect8 .foot p {
+	width: 60%;
+	height: 100%;
+	font-size: 16px;
+	box-sizing: border-box;
+	padding: 15px 20px;
+	color: #fff;
+}
+.hovereffect8 .foot div.right {
+	width: 40%;
+	height: 100%;
+	box-sizing: border-box;
+	padding-top: 20px;
+}
+.hovereffect8 .foot div.right button {
+	width: 80%;
+	height: 60%;
+	border: 3px solid #eee;
+	background-color: #333;
+	box-sizing: border-box;
+	border-radius: 50px;
+	text-transform: uppercase;
+	font-family: 'Arial', sans-serif;
+	font-weight: bold;
+	color: #eee;
+	transition: 0.3s;
+	cursor: pointer;
+}
+.hovereffect8 .foot div.right button:hover {
+	background-color: #eee;
+	color: #333;
+}
+.hovereffect8:hover .wrapper h2 {
+	transform: translate(-50%, -50%) scale(4);
+	opacity: 0;
+}
+.hovereffect8:hover .foot {
+	transform: translateY(0);
+}
+.hovereffect8:hover .wrapper .img {
+	filter: grayscale(0);
+}
